@@ -1,69 +1,69 @@
-# Bosa Noga — Интернет-магазин обуви 👟
+# Bosa Noga — Online Shoe Store 👟
 
-Дипломный проект по курсу «React» (Нетология). 
-Представляет собой полноценный клиентский веб-интерфейс (Frontend) для интернет-магазина обуви.
+Diploma project for the "React" course (Netology). 
+This is a complete client-side web interface (Frontend) for an e-commerce shoe store.
 
-## 🌟 Реализованный функционал
+## 🌟 Features
 
-Проект включает в себя следующие страницы и возможности:
+The project includes the following pages and functionalities:
 
-*   **Главная страница:** Вывод хитов продаж и популярных категорий.
-*   **Каталог товаров:** 
-    *   Фильтрация обуви по категориям.
-    *   Живой поиск товаров на сервере.
-    *   Пагинация (кнопка «Загрузить ещё»).
-*   **Страница товара:** 
-    *   Подробное описание характеристик.
-    *   Выбор доступного размера.
-    *   Выбор количества (от 1 до 10).
-*   **Корзина:**
-    *   Добавление товаров в корзину (через глобальное состояние).
-    *   Подсчет итоговой суммы.
-    *   Сохранение корзины при перезагрузке страницы (`localStorage`).
-    *   Оформление заказа (отправка POST-запроса на сервер).
-*   **Умная навигация:** Обработка несуществующих маршрутов (страница 404).
+*   **Home Page:** Displays top-selling items and popular categories.
+*   **Product Catalog:** 
+    *   Shoe filtering by categories.
+    *   Live product search on the server.
+    *   Pagination ("Load more" button).
+*   **Product Page:** 
+    *   Detailed item characteristics and descriptions.
+    *   Available size selection.
+    *   Quantity selection (from 1 to 10).
+*   **Shopping Cart:**
+    *   Adding products to the cart (managed via global state).
+    *   Total price calculation.
+    *   Cart persistence on page reload (`localStorage`).
+    *   Order checkout (POST request sent to the server).
+*   **Smart Navigation:** Handling non-existent routes (404 Error Page).
 
-## 🛠 Технологии и стек
+## 🛠 Tech Stack
 
-В проекте использованы современные инструменты экосистемы React:
+The project utilizes modern tools within the React ecosystem:
 
-*   **React** (Функциональные компоненты, Hooks: `useState`, `useEffect`)
-*   **Redux Toolkit** (Управление глобальным состоянием: корзина, строка поиска)
-*   **React Router v6** (Маршрутизация и SPA-навигация)
-*   **Fetch API** (Асинхронные запросы к серверу)
-*   **HTML5 / CSS3 / Bootstrap** (Адаптивная верстка по готовому макету)
+*   **React** (Functional components, Hooks: `useState`, `useEffect`)
+*   **Redux Toolkit** (Global state management: shopping cart, search bar)
+*   **React Router v6** (Routing and SPA navigation)
+*   **Fetch API** (Asynchronous server requests)
+*   **HTML5 / CSS3 / Bootstrap** (Responsive layout based on a provided mockup)
 
-## 🚀 Как запустить проект локально
+## 🚀 How to Run the Project Locally
 
-Проект состоит из двух частей: Frontend (этот репозиторий) и Backend (сервер, предоставляемый Нетологией).
+The application consists of two parts: the Frontend (this repository) and the Backend (a server provided by Netology).
 
-### 1. Запуск Backend-сервера
-Вам понадобится запущенный сервер из репозитория Нетологии (обычно он идет в комплекте с заданием).
-1. Склонируйте репозиторий с бэкендом.
-2. В папке сервера выполните `npm install`.
-3. Запустите сервер: `npm run watch`.
-*По умолчанию сервер запускается на `http://localhost:7070`.*
+### 1. Running the Backend Server
+You will need to have the backend server running (usually provided alongside the assignment).
+1. Clone the backend repository.
+2. Navigate to the server folder and run `npm install`.
+3. Start the server: `npm run watch`.
+*By default, the server runs on `http://localhost:7070`.*
 
-### 2. Запуск Frontend-приложения
+### 2. Running the Frontend Application
 
-1. Склонируйте этот репозиторий:
+1. Clone this repository:
    ```bash
-   git clone (https://github.com/Kirill-dev01/react-shoes-shop.git)
+   git clone https://github.com/Kirill-dev01/react-shoes-shop.git
    ```
 
-2. Перейдите в папку проекта:
+2. Navigate to the project folder:
    ```bash
    cd react-shoes-shop
    ```
 
-3. Установите зависимости:
+3. Install the dependencies:
    ```bash
    npm install
    ```
 
-4. Убедитесь, что в файле API (если он вынесен отдельно) указан правильный порт вашего бэкенда.
+4. Ensure that the correct backend port is specified in your API configuration file.
 
-5. Запустите проект в режиме разработки:
+5. Start the project in development mode:
    ```bash
    npm run dev
    ```
